@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "./components/jumbotron";
 import NavBar from "./components/navBar";
 import ImageContainer from "./components/imageContainer";
-import images from "./components/images.json.js";
+import images from "./components/images.json";
 import "./index.css"
 
 class App extends Component {
