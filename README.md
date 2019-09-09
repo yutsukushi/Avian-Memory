@@ -2,7 +2,7 @@
 
 The Avian Memory Game is a ReactJS game for users to test their memory on which exotic bird they have clicked on! When a user clicks on one of the cards, it will shuffle the cards, and which the user will take continuous turns to win the game!
 
-![Clicky game image](clickygame/public/clickygame.png)
+![Clicky game image](/public/clickygame.png)
 
 ## How to Use
 
