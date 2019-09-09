@@ -17,7 +17,10 @@ class App extends Component {
     topScoreUpdate = () => {
         if (this.state.score > this.state.topScore) {
             this.setState({
-                topScore: this.state.score
+                topScore: this.state.score,
+                function() {
+                    console.log(this.state.topScore);
+                }
             })
         }
     }
@@ -45,7 +48,10 @@ class App extends Component {
         if (this.clicked === false) {
             this.setState({
                 score: (this.state.score +1),
-                clicked: true
+                clicked: true,
+                function(){
+                    console.log(this.state.score);
+                }
             })
             // shuffles images
             this.state.images.sort(() => Math.floor(Math.random() - 0.5))
@@ -68,7 +74,7 @@ class App extends Component {
                             <ImageContainer 
                                 image= {item.image} 
                                 handleClick={this.clickCounter}
-                                key={item.id} 
+                                key={item.id}
                                 alt={item.name} 
                             />
                         ))}

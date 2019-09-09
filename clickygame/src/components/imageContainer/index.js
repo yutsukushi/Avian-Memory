@@ -6,7 +6,7 @@ function ImageContainer(props) {
 // shuffle images everytime image is clicked
     return (
         <div className="img-container">
-            <div onClick= {() => props.handleClick(props.id)} role="img">
+            <div onClick= {() => props.handleClick(props.id)}>
                 <img src={props.image} alt={props.name} />
             </div>
         </div>
