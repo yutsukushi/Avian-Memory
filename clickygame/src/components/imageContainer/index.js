@@ -5,10 +5,8 @@ import "./imageContainer.css";
 function ImageContainer(props) {
 // shuffle images everytime image is clicked
     return (
-        <div
-            role="img"
-            style={{backgroundImage:`url("${props.image}")`}}
-            onClick= {() => props.handleClick(props.id)} >
+        <div onClick= {() => props.handleClick(props.id)}>
+            <img src={props.image} alt={props.name} />
          </div>
     )
     };

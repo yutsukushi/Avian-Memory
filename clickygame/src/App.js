@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Jumbotron from "./components/jumbotron";
-import images from "./components/images.json";
 import NavBar from "./components/navBar";
 import ImageContainer from "./components/imageContainer";
+import images from "./components/images.json";
 
 class App extends Component {
 
@@ -61,7 +61,7 @@ class App extends Component {
             <div>
                 {this.state.images.map(item => (
                     <ImageContainer 
-                        img src={item.image} 
+                        image= {item.image} 
                         handleClick={this.clickCounter}
                         key={item.id} 
                         alt={item.name} 
