@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import Jumbotron from "./components/jumbotron";
+import images from "./components/images.json";
+import NavBar from "./components/navBar";
+import ImageContainer from "./components/imageContainer";
 
 class App extends Component {
 
     state = {
-        // images,
-        currentScore: 0,
+        images,
+        score: 0,
         topScore: 0
     };
 
@@ -19,28 +22,53 @@ class App extends Component {
         }
     }
 
+    // if image has already been clicked/"clicked": true
     // reset score to 0.
-    // reset = () => {
-    //     if ()
-    // }
+    // reset clicked states to false
+
+    reset = () => {
+        if (this.clicked === true) {
+            this.state.images.forEach(image => {
+                image.clicked = false;
+            })
+            alert("You guessed wrong!");
+        }
+    }
+
     // click counter for images
     //  if correct image is clicked,
     // increase score by 1 point.
     // if image is clicked twice,
-    // clickCounter = () => {
-    //     // game logic here
-    //     var count = 0;
-    //     if (this.count === 0) {
-    //         this.count++;
-    //         this.state.currentScore++;
-    //     } else if (count >= 1) {
-    //         count = 0;
-    //         // reset();
-    //     }
-    // }
+
+    clickCounter = (id) => {
+        console.log("clickCounter");
+        if (this.clicked === false) {
+            this.setState({
+                score: this.state.score +1,
+                clicked: true
+            })
+        } else {
+            this.reset()
+        }
+    }
 
     render() {
-      return <Jumbotron />
+      return (
+          <div>
+            <NavBar score={this.state.score} topScore={this.state.topScore} />
+            <Jumbotron />
+            <div>
+                {this.state.images.map(item => (
+                    <ImageContainer> 
+                        <img src={item.image} 
+                        handleClick={this.clickCounter}
+                        key={item.id}
+                        alt="exotic bird"></img>
+                    </ImageContainer>
+                ))}
+            </div>
+          </div>
+      )
     };
 }
 

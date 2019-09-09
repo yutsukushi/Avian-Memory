@@ -1,0 +1,75 @@
+[{
+    "id": 1,
+    "image": "https://princeofprice.com/wp-content/uploads/2019/03/bird-3052985_640.jpg",
+    "clicked": false
+},
+{
+    "id": 2,
+    "image": "http://animal-world.com/encyclo/birds/conures/images/JendayConureTBCn_AcB162.jpg",
+    "clicked": false
+},
+{
+    "id": 3,
+    "image": "https://i.pinimg.com/originals/1e/41/47/1e4147565646fb5107a9a5ed3a27274f.jpg",
+    "clicked": false
+},
+{
+    "id": 4,
+    "image": "https://i.pinimg.com/originals/40/0f/48/400f48642b18ae1ccc3d0e3f54a804fd.jpg",
+    "clicked": false
+},
+{
+    "id": 5,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Rosy-faced_lovebird_%28Agapornis_roseicollis_roseicollis%29.jpg",
+    "clicked": false
+},
+{
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1470662061953-318cd8c6c152?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "clicked": false
+},
+{
+    "id": 7,
+    "image": "http://nzbirdsonline.org.nz/sites/all/files/DSC01587.jpg",
+    "clicked": false
+},
+{
+    "id": 8,
+    "image": "https://img-aws.ehowcdn.com/240x360p/photos.demandstudios.com/getty/article/171/153/78036723.jpg",
+    "clicked": false
+},
+{
+    "id": 9,
+    "image": "https://animals.sandiegozoo.org/sites/default/files/2016-11/animals_hero_macaws%20copy.jpg",
+    "clicked": false
+},
+{
+    "id": 10,
+    "image": "https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Scarlet-Macaw-2-300x300.jpg",
+    "clicked": false
+},
+{
+    "id": 11,
+    "image": "https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Indian-Ring-Necked-Parakeet-300x300.jpg",
+    "clicked": false
+}, 
+{
+    "id": 12,
+    "image": "https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Eclectus-300x300.jpg",
+    "clicked": false
+},
+{
+    "id": 13,
+    "image": "https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Alexandrine-Parakeet-300x300.jpg",
+    "clicked": false
+},
+{
+    "id": 14,
+    "image": "https://d3td2int7n7fhj.cloudfront.net/sites/default/files/media/image/2017-07/bird-1435859_1920.jpg",
+    "clicked": false
+},
+{
+    "id": 15,
+    "image": "https://www.petmd.com/sites/default/files/pacific%20parrotlet%20654610000.jpg",
+    "clicked": false
+}]
