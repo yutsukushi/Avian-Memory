@@ -1,5 +1,4 @@
 import React from "react";
-// import image from "../images.json";
 import "./imageContainer.css";
 
 function ImageContainer(props) {
@@ -7,7 +6,7 @@ function ImageContainer(props) {
     return (
         <div className="img-container">
             <div onClick= {() => props.handleClick(props.id)}>
-                <img src={props.image} alt={props.name} />
+                <img src={props.image} alt={props.name} id={props.id}/>
             </div>
         </div>
     )

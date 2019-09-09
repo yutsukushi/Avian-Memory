@@ -2,7 +2,6 @@
     padding: 0;
     margin: .5rem;
     display: inline-block;
-    
 }
 
 img {
@@ -12,9 +11,9 @@ img {
     float: left;
     width:  200px;
     height: auto;
-    box-shadow: 0 5px 5px #999;
+    box-shadow: 0 5px 5px #C8C8C8;
 }
 
 img:hover {
-    box-shadow: 0 10px 10px #888
+    box-shadow: 0 10px 10px #C3C3C3;
 }
