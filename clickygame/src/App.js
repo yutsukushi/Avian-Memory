@@ -44,9 +44,11 @@ class App extends Component {
         console.log("clickCounter");
         if (this.clicked === false) {
             this.setState({
-                score: this.state.score +1,
+                score: (this.state.score +1),
                 clicked: true
             })
+            // shuffles images
+            this.state.images.sort(() => Math.floor(Math.random() - 0.5))
             this.topScoreUpdate();
         } else {
             this.reset();
@@ -55,18 +57,23 @@ class App extends Component {
 
     render() {
       return (
-          <div>
+          
+        <div>
             <NavBar score={this.state.score} topScore={this.state.topScore} />
             <Jumbotron />
-            <div>
-                {this.state.images.map(item => (
-                    <ImageContainer 
-                        image= {item.image} 
-                        handleClick={this.clickCounter}
-                        key={item.id} 
-                        alt={item.name} 
-                    />
-                ))}
+            <div className="container">
+                <div row="col-md-12">
+                    <div>
+                        {this.state.images.map(item => (
+                            <ImageContainer 
+                                image= {item.image} 
+                                handleClick={this.clickCounter}
+                                key={item.id} 
+                                alt={item.name} 
+                            />
+                        ))}
+                    </div>
+                </div>
             </div>
           </div>
       )
