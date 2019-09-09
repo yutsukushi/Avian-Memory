@@ -14,10 +14,10 @@ class App extends Component {
 
     // if current score is greater than top score
     // make top score = to current score
-    scoreUpdate = () => {
-        if (this.state.currentScore > this.state.topScore) {
+    topScoreUpdate = () => {
+        if (this.state.score > this.state.topScore) {
             this.setState({
-                topScore: this.state.currentScore
+                topScore: this.state.score
             })
         }
     }
@@ -47,8 +47,9 @@ class App extends Component {
                 score: this.state.score +1,
                 clicked: true
             })
+            this.topScoreUpdate();
         } else {
-            this.reset()
+            this.reset();
         }
     }
 
@@ -59,12 +60,12 @@ class App extends Component {
             <Jumbotron />
             <div>
                 {this.state.images.map(item => (
-                    <ImageContainer> 
-                        <img src={item.image} 
+                    <ImageContainer 
+                        img src={item.image} 
                         handleClick={this.clickCounter}
-                        key={item.id}
-                        alt="exotic bird"></img>
-                    </ImageContainer>
+                        key={item.id} 
+                        alt={item.name} 
+                    />
                 ))}
             </div>
           </div>
