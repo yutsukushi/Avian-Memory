@@ -10,7 +10,7 @@ Just click on the deployed link and begin clicking on images you think you haven
 
 ## Deployed link
 
-https://yutsukushi.github.io/Clicky-Game/
+https://yutsukushi.github.io/Avian-Memory/
 
 ## Development
 
