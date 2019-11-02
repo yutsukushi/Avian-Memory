@@ -7,7 +7,7 @@
 {
     "id": 2,
     "name": "Jenday Conure",
-    "image": "http://animal-world.com/encyclo/birds/conures/images/JendayConureTBCn_AcB162.jpg",
+    "image": "https://animal-world.com/encyclo/birds/conures/images/JendayConureTBCn_AcB162.jpg",
     "clicked": false
 },
 {
@@ -37,7 +37,7 @@
 {
     "id": 7,
     "name": "Lorikeet",
-    "image": "http://nzbirdsonline.org.nz/sites/all/files/DSC01587.jpg",
+    "image": "https://nzbirdsonline.org.nz/sites/all/files/DSC01587.jpg",
     "clicked": false
 },
 {
