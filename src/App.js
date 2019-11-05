@@ -13,8 +13,6 @@ class App extends Component {
         topScore: 0
     };
 
-    // if current score is greater than top score
-    // make top score = to current score
     topScoreUpdate = () => {
         if (this.state.score >= this.state.topScore) {
             this.setState({
@@ -29,10 +27,6 @@ class App extends Component {
         }
     }
 
-    // if image has already been clicked/"clicked": true
-    // reset score to 0.
-    // reset clicked states to false
-
     reset = () => {
         this.state.images.forEach(image => {
             image.clicked = false;
@@ -43,14 +37,8 @@ class App extends Component {
         alert("Whoops! Game over!");
     }
 
-    // click counter for images
-    //  if correct image is clicked,
-    // increase score by 1 point.
-    // if image is clicked twice,
-
     clickCounter = (id) => {
 
-        // filters through and finds image id equal to the image clicked
         const clicked = images.filter(image => image.id === id);
 
         if (clicked[0].clicked === false) {
